@@ -8,6 +8,8 @@ import {
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Home from './Home';
+import Counter from './Counter';
+import Test from './Test';
 
 function App() {
   return (
@@ -18,10 +20,10 @@ function App() {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link to="./Test">Test</Link>
           </li>
           <li>
-            <Link to="/dashboard">Dashboard</Link>
+            <Link to="./Counter">Counter</Link>
           </li>
         </ul>
         <hr />
@@ -35,6 +37,12 @@ function App() {
         <Switch>
           <Route exact path="/">
             <Home />
+          </Route>
+          <Route path="/Test">
+            <Test />
+          </Route>
+          <Route path="/Counter">
+            <Counter />
           </Route>
         </Switch>
       </div>
