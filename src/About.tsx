@@ -2,7 +2,6 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Container from 'react-bootstrap/Container';
-import GameImage from './images/Games.jpg';
 
 function About() {
   return (
@@ -10,11 +9,15 @@ function About() {
       <Container className="p-3">
         <h1 className="text-left">About me</h1>
         <Jumbotron>
-          <h1 className="text-center">
-            This website is implemented to learn React Native for myself. It shows a list of games I have played so far.
+          <h1 className="text-left">
+            I am Dongjoon Kim, borned in South Korea. I have an electrical enginnering background.
+            After grduation, I wanted to study and learn software skills.
+            I have studied courese in web development such as Spring, Java, Oracle
+            for 10 months at the coding bootcamp in Korea.
+            I was fortunate to join the Rakuten Kobo Japan team.
+            And now, I am Learning React Native, Redux from the team leader, Oskar.
           </h1>
         </Jumbotron>
-        <img style={{ height: 'auto', width: '100%' }} src={GameImage} alt="" />
       </Container>
     </div>
   );
