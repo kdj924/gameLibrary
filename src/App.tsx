@@ -9,7 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Home from './Home';
 import Counter from './Counter';
-import Test from './Test';
+import About from './About';
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="./Test">About</Link>
+            <Link to="./About">About</Link>
           </li>
           <li>
             <Link to="./Counter">Counter</Link>
@@ -38,8 +38,8 @@ function App() {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route path="/Test">
-            <Test />
+          <Route path="/About">
+            <About />
           </Route>
           <Route path="/Counter">
             <Counter />
