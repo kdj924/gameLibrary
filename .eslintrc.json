@@ -4,9 +4,11 @@
         "es2020": true
     },
     "extends": [
+        "eslint:recommended",
         "plugin:react/recommended",
         "airbnb",
-        "eslint:recommended"
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -20,16 +22,22 @@
         "react",
         "@typescript-eslint"
     ],
-    "rules": {
-        "import/no-unresolved": 0,
-        "import/extensions": 0,
-        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".tsx"] }]
-    },
     "settings": {
         "import/resolver": {
-          "node": {
-            "extensions": [".js", ".jsx", ".ts", ".tsx", ".json"]
+            "node": {
+              "extensions": [
+                ".ts",
+                ".tsx"
+              ]
+            }
           }
-        }
-      }
+    },
+    "rules": {
+        "import/extensions": [2, {
+            "ts": "never",
+            "tsx": "never"
+            }],
+        "react/jsx-filename-extension": [2, { "extensions": [".tsx"] }],
+        "@typescript-eslint/explicit-module-boundary-types": 0
+    }
 }
