@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function Test() {
   return (
     <div>
-      <h1>Test</h1>
+      <h1>About</h1>
     </div>
   );
 }
