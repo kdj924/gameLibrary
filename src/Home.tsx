@@ -3,6 +3,7 @@ import Jumbotron from 'react-bootstrap/Jumbotron';
 import Container from 'react-bootstrap/Container';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import GameImage from './images/Games.jpg';
+import './css/Home.css';
 
 function Home() {
   return (
@@ -10,19 +11,19 @@ function Home() {
       <Container className="p-3">
         <h1 className="text-left">Home</h1>
         <Jumbotron>
-          <h1 className="text-center">
+          <p id="title_size">
             Welcome To the Game Library
-          </h1>
+          </p>
         </Jumbotron>
         <h2 className="text-left">About this website</h2>
         <Jumbotron>
-          <h1 className="text-left">
+          <p className="paragraph_size">
             This website is implemented to learn React Native for myself.
             It shows a list of games I have played so far.
             Also, you can see the games information in detail.
-          </h1>
+          </p>
         </Jumbotron>
-        <img style={{ height: 'auto', width: '100%' }} src={GameImage} alt="" />
+        <img id="game_image" src={GameImage} alt="Game List" />
       </Container>
     </div>
   );
