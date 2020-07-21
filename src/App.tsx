@@ -3,30 +3,28 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
 } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Dropdown from 'react-bootstrap/Dropdown';
 import './css/App.css';
 import Home from './Home';
-import Counter from './Counter';
+import Counter from './List';
 import About from './About';
 
 function App() {
   return (
     <Router>
       <div>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="./About">About me</Link>
-          </li>
-          <li>
-            <Link to="./Counter">Counter</Link>
-          </li>
-        </ul>
-        <hr />
+        <Dropdown>
+          <Dropdown.Toggle variant="primary" id="dropdown-basic">
+            Menu
+          </Dropdown.Toggle>
+          <Dropdown.Menu>
+            <Dropdown.Item href="/">Home</Dropdown.Item>
+            <Dropdown.Item href="./About">About me</Dropdown.Item>
+            <Dropdown.Item href="./List">List</Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown>
         {/*
               A <Switch> looks through all its children <Route>
               elements and renders the first one whose path
@@ -41,7 +39,7 @@ function App() {
           <Route path="/About">
             <About />
           </Route>
-          <Route path="/Counter">
+          <Route path="/List">
             <Counter />
           </Route>
         </Switch>
