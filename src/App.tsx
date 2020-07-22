@@ -3,6 +3,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
+  Link,
 } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Dropdown from 'react-bootstrap/Dropdown';
@@ -20,9 +21,9 @@ function App() {
             Menu
           </Dropdown.Toggle>
           <Dropdown.Menu>
-            <Dropdown.Item href="/">Home</Dropdown.Item>
-            <Dropdown.Item href="./About">About me</Dropdown.Item>
-            <Dropdown.Item href="./List">List</Dropdown.Item>
+            <Dropdown.Item as={Link} to="/">Home</Dropdown.Item>
+            <Dropdown.Item as={Link} to="/about">About me</Dropdown.Item>
+            <Dropdown.Item as={Link} to="/list">List</Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
         {/*
@@ -36,10 +37,10 @@ function App() {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route path="/About">
+          <Route path="/about">
             <About />
           </Route>
-          <Route path="/List">
+          <Route path="/list">
             <Counter />
           </Route>
         </Switch>
