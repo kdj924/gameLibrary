@@ -35,9 +35,10 @@
     "rules": {
         "import/extensions": [2, {
             "ts": "never",
-            "tsx": "never"
+            "tsx": "never",
+            "json": "never"
             }],
-        "react/jsx-filename-extension": [2, { "extensions": [".tsx"] }],
+        "react/jsx-filename-extension": [2, { "extensions": [".tsx", ".json"] }],
         "@typescript-eslint/explicit-module-boundary-types": 0
     }
 }
