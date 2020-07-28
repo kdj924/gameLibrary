@@ -18,8 +18,8 @@ function List() {
             </tr>
           </thead>
           <tbody>
-            {Game.games.map((x) => (
-              <tr>
+            {Game.games.map((x, i) => (
+              <tr key={i}>
                 <td>{x.title}</td>
                 <td className="left">{x.description}</td>
                 <td><img className="game_list" src={`${process.env.PUBLIC_URL}/images/${x.images}`} alt={x.title} /></td>
