@@ -33,7 +33,7 @@
           }
     },
     "rules": {
-        "import/extensions": [2, {
+        "import/extensions": [2, "ignorePackages", {
             "ts": "never",
             "tsx": "never"
             }],
