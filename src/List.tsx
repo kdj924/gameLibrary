@@ -22,7 +22,7 @@ function List() {
               <tr>
                 <td>{x.title}</td>
                 <td className="left">{x.description}</td>
-                <td><img className="game_list" src={`${process.env.PUBLIC_URL}/images/${x.images}`} alt="game_images " /></td>
+                <td><img className="game_list" src={`${process.env.PUBLIC_URL}/images/${x.images}`} alt={x.title} /></td>
               </tr>
             ))}
           </tbody>
