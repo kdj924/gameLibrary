@@ -5,45 +5,60 @@
             "title": "The Last of Us",
             "images": "thelastofus.jpg",
             "description": "The Last of Us is a 2013 action-adventure game developed by Naughty Dog and published by Sony Computer Entertainment. Players control Joel, a smuggler tasked with escorting a teenage girl, Ellie, across a post-apocalyptic United States. The Last of Us is played from a third-person perspective.",
-            "review": "A4",
-            "requirements": "A5",
-            "date": "A6"
+            "review": "96",
+            "requirements": "N/A",
+            "date": "June 14, 2013",
+            "platform": "PlayStation",
+            "developers": "Naughty Dog",
+            "publisher": "Sony Computer Entertainment"
         },
         {
             "id":"A2",
             "title": "Bloodborne",
             "images": "bloodborne.jpg",
             "description": "Bloodborne is an action role-playing game developed by FromSoftware and published by Sony Computer Entertainment for the PlayStation 4. ... The game is played from a third-person perspective. Players control a customizable protagonist and the gameplay is focused on weapons-based combat and exploration.",
-            "review": "B4",
-            "requirements": "B5",
-            "date": "B6"
+            "review": "95",
+            "requirements": "N/A",
+            "date": "March 24, 2015",
+            "platform": "PlayStation",
+            "developers": "FromSoftware",
+            "publisher": "Sony Computer Entertainment"
         },
         {   
             "id":"A3",
             "title": "DarkSouls 3",
             "images": "darksouls3.jpg",
             "description": "Dark Souls III is an action role-playing game played in a third-person perspective, similar to previous games in the series. According to lead director and series creator Hidetaka Miyazaki, the game's gameplay design followed closely from Dark Souls II",
-            "review": "C4",
-            "requirements": "C5",
-            "date": "C6"
+            "review": "90",
+            "requirements": "N/A",
+            "date": "March 24, 2016",
+            "platform": "PlayStation",
+            "developers": "FromSoftware",
+            "publisher": "Bandai Namco Entertainment"
         },
         {
             "id":"A4",
             "title": "Uncharted 4",
             "images": "uncharted4.jpg",
             "description": "Uncharted 4: A Thief's End is an action-adventure game played from a third-person perspective, with platforming elements. Players traverse several environments, moving through locations including towns, buildings and wilderness to advance through the game's story.",
-            "review": "D4",
-            "requirements": "D5",
-            "date": "D6"
+            "review": "97",
+            "requirements": "N/A",
+            "date": "May 10, 2016",
+            "platform": "PlayStation",
+            "developers": "Naughty Dog",
+            "publisher": "Sony Computer Entertainment"
         },
         {
             "id":"A5",
             "title": "God of War",
             "images": "godofwar.jpg",
             "description": "God of War is the eighth installment in the franchise overall. Unlike previous installments, this game focuses on Norse mythology and follows an older and more seasoned Kratos and his new son Atreus in the years since God of War III. The game released on April 20, 2018, and is exclusive to the PlayStation 4.",
-            "review": "D4",
-            "requirements": "D5",
-            "date": "D6"
+            "review": "92",
+            "requirements": "N/A",
+            "date": "April 20, 2018",
+            "platform": "PlayStation",
+            "developers": "Santa Monica Studio",
+            "publisher": "Sony Interactive Entertainment"
         }
     ]
 }

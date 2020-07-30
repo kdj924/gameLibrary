@@ -6,6 +6,13 @@
 .game_list{
   height:150%;
   width:100%;
+  margin-left:auto;
+}
+
+.game_list_detail{
+  height:150%;
+  width:200%;
+  margin:auto;
 }
 
 .paragraph_size{
@@ -26,6 +33,7 @@ table, th ,td {
   text-align: left;
 }
 
+
 th{
   text-align: center;
   vertical-align: middle; 
@@ -40,5 +48,10 @@ td {
   background-color:white;
   text-align:center; 
   vertical-align: middle;
+}
+
+.size{
+  padding-right: 80px;
+  text-align: center;
 }
 
