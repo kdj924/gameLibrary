@@ -1,15 +1,11 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
-import Game from './data/game.json';
 import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
   Link,
 } from 'react-router-dom';
+import Game from './data/game.json';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/Home.css';
-import Detail from './Detail';
 
 function List() {
   return (

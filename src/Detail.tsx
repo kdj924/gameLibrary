@@ -11,41 +11,54 @@ function Detail() {
     <div>
       <Container className="p-3">
         <h1 className="text-left">Detail</h1>
-        <table>
-          <thead>
-            <tr>
-              <th>Title</th>
-              <th>Description</th>
-              <th className="size">Image</th>
-              <th>Review</th>
-              <th>Requirements</th>
-              <th>Release Date</th>
-              <th>Platform</th>
-              <th>Developers</th>
-              <th>Publisher</th>
-            </tr>
-          </thead>
-          <tbody>
-            {Game.games.map((x) => {
-              if (x.id === `${id}`) {
-                return (
-                  <tr key={x.id}>
+
+        {Game.games.map((x) => {
+          if (x.id === `${id}`) {
+            return (
+              <table key={x.id}>
+                <thead>
+                  <tr>
+                    <th>Title</th>
                     <td>{x.title}</td>
+                  </tr>
+                  <tr>
+                    <th>Description</th>
                     <td className="left">{x.description}</td>
-                    <td className="size"><img className="game_list_detail" src={`${process.env.PUBLIC_URL}/images/${x.images}`} alt={x.title} /></td>
+                  </tr>
+                  <tr>
+                    <th>Image</th>
+                    <td><img className="game_list" src={`${process.env.PUBLIC_URL}/images/${x.images}`} alt={x.title} /></td>
+                  </tr>
+                  <tr>
+                    <th>Review</th>
                     <td>{x.review}</td>
+                  </tr>
+                  <tr>
+                    <th>Requirements</th>
                     <td>{x.requirements}</td>
+                  </tr>
+                  <tr>
+                    <th>Release Date</th>
                     <td>{x.date}</td>
+                  </tr>
+                  <tr>
+                    <th>Platform</th>
                     <td>{x.platform}</td>
+                  </tr>
+                  <tr>
+                    <th>Developers</th>
                     <td>{x.developers}</td>
+                  </tr>
+                  <tr>
+                    <th>Publisher</th>
                     <td>{x.publisher}</td>
                   </tr>
-                );
-              }
-              return null;
-            })}
-          </tbody>
-        </table>
+                </thead>
+              </table>
+            );
+          }
+          return null;
+        })}
       </Container>
     </div>
   );

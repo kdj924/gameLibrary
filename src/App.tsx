@@ -4,7 +4,6 @@ import {
   Switch,
   Route,
   Link,
-  useParams,
 } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Dropdown from 'react-bootstrap/Dropdown';
@@ -43,7 +42,7 @@ function App() {
             <About />
           </Route>
           <Route path="/list/:id">
-            <Topic />
+            <Detail />
           </Route>
           <Route path="/list">
             <Counter />
@@ -54,9 +53,4 @@ function App() {
   );
 }
 
-function Topic() {
-  const { id } = useParams();
- // return <Route path={`/list/${id}`} component={Detail} />;
-  return <Route path="/list/:id" component={Detail} />;
-}
 export default App;
