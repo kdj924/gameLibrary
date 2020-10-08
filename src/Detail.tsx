@@ -11,7 +11,6 @@ function Detail() {
     <div>
       <Container className="p-3">
         <h1 className="text-left">Detail</h1>
-
         {Game.games.map((x) => {
           if (x.id === `${id}`) {
             return (

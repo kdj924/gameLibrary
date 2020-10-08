@@ -48,6 +48,9 @@ function App() {
             <Counter />
           </Route>
         </Switch>
+        <footer className="p-3">
+          Footer
+        </footer>
       </div>
     </Router>
   );
