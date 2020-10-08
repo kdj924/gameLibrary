@@ -1,13 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import Container from 'react-bootstrap/Container';
 import {
   Link,
 } from 'react-router-dom';
-import Game from './data/game.json';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './css/Home.css';
+import { loadGames } from './actions';
 
 function List() {
+  const dispatch = useDispatch();
+  const games = useSelector((state) => state.game.games);
+
+  useEffect(() => {
+    dispatch(loadGames());
+  }, [dispatch]);
+
   return (
     <div>
       <Container className="p-3">
@@ -21,7 +28,7 @@ function List() {
             </tr>
           </thead>
           <tbody>
-            {Game.games.map((x) => (
+            {games.map((x) => (
               <tr key={x.id}>
                 <td><Link to={`/list/${x.id}`}>{x.title}</Link></td>
                 <td className="left">{x.description}</td>
