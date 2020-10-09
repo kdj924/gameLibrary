@@ -13,6 +13,8 @@ import Home from './Home';
 import List from './List/List';
 import About from './About';
 import Detail from './Detail';
+import Logo from './images/koboLogo.jpg';
+import Logo2 from './images/reactnativeLogo.jpg';
 
 function App() {
   return (
@@ -51,6 +53,10 @@ function App() {
             </Route>
           </Switch>
         </div>
+        <footer className="p-3">
+          <img id="kobo_image" src={Logo} alt="Kobo Logo" />
+          <img id="reactnative_image" src={Logo2} alt="ReactNative Logo" />
+        </footer>
       </Router>
     </ReduxProvider>
   );
