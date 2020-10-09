@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   BrowserRouter as Router,
   Switch,
@@ -17,6 +17,14 @@ import Logo from './images/koboLogo.jpg';
 import Logo2 from './images/reactnativeLogo.jpg';
 
 function App() {
+  const [time, setTime] = useState(new Date().toString());
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      const date = new Date();
+      setTime(date.toString());
+      return () => { clearTimeout(timer); };
+    }, 1000);
+  }, [time]);
   return (
     <ReduxProvider>
       <Router>
@@ -56,6 +64,7 @@ function App() {
         <footer className="p-3">
           <img id="kobo_image" src={Logo} alt="Kobo Logo" />
           <img id="reactnative_image" src={Logo2} alt="ReactNative Logo" />
+          {time}
         </footer>
       </Router>
     </ReduxProvider>
