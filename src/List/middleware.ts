@@ -1,5 +1,5 @@
 import { Dispatch, MiddlewareAPI } from 'redux';
-import Games from '../data/game.json';
+import gameService from '../gameService';
 import { AppActions } from '../redux/appActions';
 
 type DisptachActions = Dispatch<AppActions>
@@ -12,7 +12,7 @@ const listMiddleware = (
   action: AppActions,
 ) => {
   if (action.type === 'LOAD_GAMES') {
-    const { games } = Games;
+    const { games } = gameService.getGames();
     store.dispatch({
       type: 'ADD_GAMES',
       games,

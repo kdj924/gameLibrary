@@ -33,6 +33,7 @@
           }
     },
     "rules": {
+        "react/prop-types": 0,
         "import/extensions": [2, "ignorePackages", {
             "ts": "never",
             "tsx": "never"

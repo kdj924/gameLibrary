@@ -1,17 +1,18 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
 import { useParams } from 'react-router-dom';
-import Game from './data/game.json';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import gameService from './gameService';
 import './css/Home.css';
 
 function Detail() {
+  const { games } = gameService.getGames();
   const { id } = useParams();
+
   return (
     <div>
       <Container className="p-3">
         <h1 className="text-left">Detail</h1>
-        {Game.games.map((x) => {
+        {games.map((x) => {
           if (x.id === `${id}`) {
             return (
               <table key={x.id}>

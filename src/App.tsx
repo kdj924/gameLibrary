@@ -5,7 +5,6 @@ import {
   Route,
   Link,
 } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Dropdown from 'react-bootstrap/Dropdown';
 import './css/App.css';
 import ReduxProvider from './redux/store';

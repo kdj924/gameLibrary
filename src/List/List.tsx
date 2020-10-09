@@ -4,7 +4,6 @@ import Container from 'react-bootstrap/Container';
 import {
   Link,
 } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { loadGames } from './actions';
 
 function List() {
