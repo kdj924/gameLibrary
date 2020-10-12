@@ -21,8 +21,8 @@ function App() {
     const timer = setTimeout(() => {
       const date = new Date();
       setTime(date.toString());
-      return () => { clearTimeout(timer); };
     }, 1000);
+    return () => { clearTimeout(timer); };
   }, [time]);
   return (
     <ReduxProvider>
